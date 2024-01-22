@@ -81,7 +81,7 @@ var apikey = req.query.apikey
 if (!url) return res.json(loghandler.noturl)
 if (!apikey) return res.json(loghandler.notapikey)
 if(listkey.includes(apikey)){
-let anu = await fetchJson(`https://api.lolhuman.xyz/api/ytaudio?apikey=${lolkey}&url=${url}`)
+let anu = await fetchJson(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${lolkey}&url=${url}`)
 res.json({
 status: true,
 creator: `${creator}`,
@@ -97,7 +97,7 @@ var apikey = req.query.apikey
 if (!url) return res.json(loghandler.noturl)
 if (!apikey) return res.json(loghandler.notapikey)
 if(listkey.includes(apikey)){
-let anu = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo?apikey=${lolkey}&url=${url}`)
+let anu = await fetchJson(`https://api.lolhuman.xyz/api/ytvideo2?apikey=${lolkey}&url=${url}`)
 res.json({
 status: true,
 creator: `${creator}`,
